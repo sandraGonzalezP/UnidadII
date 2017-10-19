@@ -1,0 +1,28 @@
+{% extends 'base.html' %}}
+{% block body %}
+    <h2>{{ the_title }}</h2>
+    <form method="POST" action="/force">
+        <table>
+            <p>Please enter the date: </p>
+            <tr>
+                <td>G:</td>
+                <td><input type="number" name="G" /></td>
+            </tr>
+            <tr>
+                <td>M:</td>
+                <td><input type="number" name="M" step="any"/></td>
+            </tr>
+            <tr>
+                <td>m</td>
+                <td><input type="number" name="m"  /></td>
+            </tr>
+            <tr>
+                <td>r</td>
+                <td><input type="number" name="r"  /></td>
+            </tr>
+        </table>
+        <p>When you ready, please click this button</p>
+              <p><input type="submit" value="Calculate" /></p>
+
+    </form>
+{% endblock%}
